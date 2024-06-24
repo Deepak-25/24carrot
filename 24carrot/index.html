@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <style>
+    *{
+      padding: 0px;
+      margin: 0px;
+    }
+    #navstart{
+      margin-top: 50px;
+      margin-left: 80px;
+      letter-spacing: 3px;
+    }
+    #navend{
+      margin-left: 1050px;
+      margin-top: -37px;
+      letter-spacing: 3px;
+    }
+    #img1{
+      margin-left:600px;
+      height: 50px;
+      margin-top: -60px;
+    }
+    #img2{
+      height: 200px;
+      width: 500px;
+      position: cover;
+    }
+    #text{
+      color: rgb(255, 255, 255);
+      font-weight: 100;
+      font-size: 80px;
+      font-family: "F37 Caslon", serif;
+      margin-top: 170px;
+      margin-left: 400px;
+    }
+    #text2{
+      font-family: Rustica, sans-serif;
+      color: rgb(100, 123, 78);
+      letter-spacing: 3.6px;
+      font-weight: 400;
+    }
+    #space{
+      height: 1500px;
+    }
+    #text2{
+      margin-top: -750px;
+      margin-left: 180px;
+    }
+    #text3{
+      margin-left: 150px;
+      font-size: 90px;
+      font-family: "F37 Caslon", serif;
+      line-height: 1;
+    }
+    #text4{
+      margin-left: 160px;
+      margin-top: 40px;
+      line-height: 2;
+    }
+    #butt1{
+    height: 50px;
+    width: 150px;
+    margin-left: 270px;
+    margin-top: 40px;
+    background-color:rgb(232,103,47);
+    border-radius: 10px;
+}
+#butt1 i{
+    color: black;
+    display: none;
+}
+#butt1:hover i {
+    display: inline-block;
+    color: black;
+    padding-left: 8px;
+    padding-top: 2px;
+}
+    #text6{
+      margin-top: 400px;
+      margin-left: 800px;
+      font-size: 100px;
+      font-family: "F37 Caslon", serif;
+      line-height: 1;
+    }
+    #text5{
+      margin-top: 70px;
+      margin-left: 1050px;
+      font-family: futura-pt, sans-serif;
+      font-size: 18px;
+      font-weight: 500px;
+      text-decoration:
+none solid rgb(26, 65, 34)
+
+    }
+    #text7{
+      margin-left: 980px;
+      margin-top: 20px;
+      text-decoration:
+none solid rgb(26, 65, 34);
+font-family:futura-pt, sans-serif ;
+font-weight: 300;
+line-height: 2;
+letter-spacing: 0.16;
+
+    }
+    #butt2{
+    height: 50px;
+    width: 150px;
+    margin-left: 980px;
+    margin-top: 40px;
+    background-color:rgb(232,103,47);
+    border-radius: 10px;
+}
+#butt2 i{
+    color: black;
+    display: none;
+}
+#butt2:hover i {
+    display: inline-block;
+    color: black;
+    padding-left: 8px;
+    padding-top: 2px;
+}
+#img3{
+  height: 700px;
+  width: 800px;
+  background-image: url(../pictures/1.1-Lorely-Meza-1.jpg);
+  background-size: cover;
+  margin-left: 740px;
+  margin-top: -600px;
+  position: absolute;
+  border-top-left-radius: 250px;
+}
+#img4{
+  height: 900px;
+  width: 600px;
+  background-image: url(../pictures/wedding-scroll-cropped.jpg);
+  background-size: cover;
+  margin-left: 100px;
+  margin-top: 300px;
+  position: absolute;
+  border-top-left-radius: 350px;
+  border-top-right-radius: 350px;
+}
+#text8{
+  line-height: 60px;
+  margin-left: 750px;
+  margin-top: -320px;
+}
+#img5{
+  background-image: url(../pictures/unforegetable-banner.png);
+    height: 700px;
+    width: 1600px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    margin-top: 400px
+}
+#text9{
+  margin-top: 30px;
+  height: 20px;
+  width: 100px;
+  margin-left: 500px;
+  position: absolute;
+  font-weight: 500;
+  font-size: 100px;
+  font-family: "F37 Caslon", serif;
+  line-height: 1;
+}
+#text10{
+  margin-left: 500px;
+  margin-top: 240px;
+  line-height: 26px;
+}
+#butt3{
+    height: 50px;
+    width: 150px;
+    margin-left: 650px;
+    margin-top: 40px;
+    background-color:rgb(232,103,47);
+    border-radius: 10px;
+}
+#butt3 i{
+    color: black;
+    display: none;
+}
+#butt3:hover i {
+    display: inline-block;
+    color: black;
+    padding-left: 8px;
+    padding-top: 2px;
+}
+#text11{
+  font-weight: 400;
+  font-family: "F37 Caslon", serif;
+  font-size: 100px;
+  line-height: 1;
+  margin-left: 450px;
+  padding-top:60px;
+
+}
+#text12{
+  margin-left: 400px;
+  padding-top: 20px;
+  line-height: 2;
+}
+#video1{
+  margin-left: 250px;
+  margin-top: 150px;
+  height: 500px;
+  width: 500px;
+
+}
+#text13{
+  margin-top: 400px;
+  margin-left: 450px;
+  font-size: 100px;
+  font-weight: 10px;
+  line-height: 1;
+  font-family: "F37 Caslon", serif;
+}
+#text14{
+  font-family: futura-pt, sans-serif;
+  line-height: 2;
+  font-weight: 300px;
+  margin-left:400px;
+  margin-top:20px;
+}
+#butt4{
+    height: 50px;
+    width: 150px;
+    margin-left: 650px;
+    margin-top: 40px;
+    background-color:rgb(232,103,47);
+    border-radius: 10px;
+}
+#butt4 i{
+    color: black;
+    display: none;
+}
+#butt4:hover i {
+    display: inline-block;
+    color: black;
+    padding-left: 8px;
+    padding-top: 2px;
+}
+#card2{
+  display: flex;
+}
+#card1{
+  display: flex;
+}
+    #textt2{
+      margin-left: 230px;
+      font-size: 30px;
+      font-family: "F37 Caslon", serif;
+      line-height: 1;
+    }
+    #textt3{
+      margin-left: 230px;
+      margin-top: 40px;
+      line-height: 1;
+    }
+    #but1{
+    height: 30px;
+    width: 100px;
+    margin-left: 250px;
+    margin-top: 40px;
+    background-color:white;
+    border-radius: 10px;
+}
+#but1 i{
+    color: black;
+    display: none;
+}
+#but1:hover i {
+    display: inline-block;
+    color: black;
+    padding-left: 8px;
+    padding-top: 2px;
+}
+#texttt{
+      margin-left: 230px;
+      font-size: 30px;
+      font-family: "F37 Caslon", serif;
+      line-height: 1;
+    }
+    #texttt1{
+      margin-left: 230px;
+      margin-top: 40px;
+      line-height: 1;
+    }
+    #bu{
+    height: 30px;
+    width: 100px; 
+    margin-left: 250px;
+    margin-top: 40px;
+    background-color:white;
+    border-radius: 10px;
+}
+#bu i{
+    color: black;
+    display: none;
+}
+#bu:hover i {
+    display: inline-block;
+    color: black;
+    padding-left: 8px;
+    padding-top: 2px;
+}
+#ne{
+display: inline-block;
+}
+#tex{
+      margin-left: 580px;
+      margin-top: -200px;
+      font-size: 30px;
+      font-family: "F37 Caslon", serif;
+      line-height: 1;
+    }
+    #tex1{
+      margin-left: 570px;
+      margin-top: 40px;
+      line-height: 1;
+    }
+    #buto{
+    height: 30px;
+    width: 100px;
+    margin-left: 610px;
+    margin-top: 40px;
+    background-color:white;
+    border-radius: 10px;
+}
+#buto i{
+    color: black;
+    display: none;
+}
+#buto:hover i {
+    display: inline-block;
+    color: black;
+    padding-left: 8px;
+    padding-top: 2px;
+}
+#nei{
+display: inline-block;
+}
+#tx{
+      margin-left: 580px;
+      margin-top: -200px;
+      font-size: 30px;
+      font-family: "F37 Caslon", serif;
+      line-height: 1;
+    }
+    #tx1{
+      margin-left: 570px;
+      margin-top: 40px;
+      line-height: 1;
+    }
+    #buo{
+    height: 30px;
+    width: 100px;
+    margin-left: 610px;
+    margin-top: 40px;
+    background-color:white;
+    border-radius: 10px;
+}
+#buo i{
+    color: black;
+    display: none;
+}
+#buo:hover i {
+    display: inline-block;
+    color: black;
+    padding-left: 8px;
+    padding-top: 2px;
+}
+
+#main8{
+    height: 500px;
+    width: 1520px;
+    display: flex;
+}
+.abt{
+    width: 260px;
+    background-color: rgb(17,17,17);
+}
+#ab1{
+    color: white;
+    line-height: 35px;
+    padding-left: 70px;
+    padding-top: 50px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sp1{
+    font-size: 15px;
+    
+}
+#ab2{
+    color: white;
+    line-height: 35px;
+    padding-left: 70px;
+    padding-top: 50px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sp2{
+    font-size: 15px;
+    
+}
+#ab3{
+    color: white;
+    line-height: 35px;
+    padding-left: 70px;
+    padding-top: 50px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sp3{
+    font-size: 15px;
+    
+}
+#ab4{
+    color: white;
+    line-height: 35px;
+    padding-left: 70px;
+    padding-top: 50px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sp4{
+    font-size: 15px;
+}
+#ab5{
+    color: white;
+    line-height: 35px;
+    padding-left: 70px;
+    padding-top: 50px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sp5{
+    font-size: 15px;
+}
+#ab6{
+    color: white;
+    line-height: 35px;
+    padding-left: 70px;
+    padding-top: 50px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sp6{
+    font-size: 15px;
+}
+#abt7{
+    display:inline-block;
+    background-image: url(../pictures/logo2.png);
+}
+#main9{
+    height:80px;
+    width: 1518px;
+    background-color:rgb(17,17,17) ;
+}
+.off{
+    background-image: url(../pictures/logo);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position-x: 30px;
+    background-position-y:20px;
+}
+#of1{
+    color: aliceblue;
+    padding-left: 80px;
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#of2{
+    color: aliceblue;
+    font-size: 15px;
+    font-weight:200;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -22px;
+}
+#main9 i{
+    color: aliceblue;
+}
+#of3{
+    color: aliceblue;
+    font-size: 15px;
+    font-weight:200;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    margin-left: 420px;
+    margin-top: -21px;
+}
+#of4{
+    position: absolute;
+    margin-left: 1350px;
+    margin-top: -20px;
+}
+#of5{
+    position: absolute;
+    margin-left: 1400px;
+    margin-top: -20px;
+}
+#of6{
+    position: absolute;
+    margin-left: 1450px;
+    margin-top: -20px;
+}
+#main10{
+    border: 1px solid white;
+    border-left: none;
+    height:120px;
+    width: 1518px;
+    background-color:rgb(17,17,17) ;
+}
+#con1{
+    font-size: 12px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+#con2{
+    font-size: 12px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+#con3{
+    margin-left: 170px;
+    word-spacing: 20px;
+}
+
+#space2{
+  height: 120vh;
+  background-color: rgb(232,235,228);
+}
+  </style>
+    <!-- nav top -->
+    <div id="navstart" class="nav">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">EVENTS</a>
+        </li>
+      </ul>
+    </div>
+<div id="navend" class="nav">
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">VENUES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CAREERS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">GET IN TOUCH</a>
+      </li>
+    </ul>
+    <!-- img -->
+   </div>
+<img src="../pictures/24carrots.svg" alt="" id="img1">
+<br><br>
+<!-- img2 -->
+<div id="img2">
+  <video autoplay src="../pictures/24carrtos-home-banner.mp4"></video>
+</div>
+<div id="text">
+<p>SIMPLY THE FINEST</p>
+</div>
+<div id="space">
+</div>
+<div id="text2"> 
+  <p>WELCOME TO 24 CARROTS</p>
+</div>
+<div id="text3">
+  Remarkable <br>Catering
+  & <br>Events
+</div>
+<div id="text4">
+  24 Carrots is the premier catering and events company of <br>choice in Southern California. We create remarkable <br>experiences by offering the finest quality foods and providing <br>
+  unsurpassed personalized service, driven by our passion for <br>life’s special occasions.
+</div>
+ <button id="butt1">Get help <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a></button>
+<div id="img3">
+</div>
+<div id="img4">
+</div>
+<div id="text6">
+  Making Every <br>Experience <br>Magical
+</div>
+<div id="text5"> 
+  <p>EXPECTIONAL WEDDINGS</p>
+</div>
+<div id="text7">
+The most important day of your life, is ours too. Your <br>wedding should be the ultimate celebration of your <br>
+ relationship, and our team of experts guide you <br>through the process, offering peace of mind and a <br> remarkable experience.
+</div>
+ <button id="butt2">LEARN MORE <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a></button>
+<div id="text8">
+<p>WEDDINGS
+  <br>
+  Social
+  <br>
+  Corporate
+  <br>
+  VENUES
+</p>
+</div>
+<div id="img5"></div>
+<div id="text9">
+  Unforgettable <br>Venues
+</div>
+<div id="text10">
+  <p>24 Carrots is the exclusive or preferred caterer at Southern California’s most <br> spectacular properties. From intimate understated spaces to large and luxurious,<br> we’ll help you find the event venue that makes your heart skip a beat.</p>
+</div>
+<button id="butt3">Explore Venues<a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a></button>
+<br><br>
+<div class="card-group">
+  <div class="card">
+    <img src="../pictures/1.1-Lorely-Meza-1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">THE LOVELY DINNER</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="../pictures/1.-MAIN-4.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">THE WEDDING PARTY</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="../pictures/the-richland-tanveer-badal-13.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">WEDDING</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+<div id="space2">
+  <div id="text11">
+    Far More Than <br>
+    Just Business
+  </div>
+  <div id="text12">
+    The way you do anything is the way you do everything. We haven’t cracked the code on catering; we simply <br>care unreasonably about every aspect of what we do. We care about   people as much as we care about <br>details, and we absolutely refuse to compromise on making your 
+     day anything but the best. We’ve got your <br>back from the initial idea to the final farewell!
+  </div>
+  <div id="video1">
+    <iframe width="1000" height="700" src="https://www.youtube.com/embed/WzQBAc8i73E?si=j2qpz-B7X9uE9M2G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</div>
+<div id="text13">
+  <p>Great Food & A <br> Whole Lot More</p>
+</div>
+<div id="text14">
+  <p>Catering is just the beginning. Sure, we love astonishing your guests with attentive service, thoughtful food, and <br> an inviting environment. But what really matters most is helping you create memories that will last for a lifetime. <br> Our industry experts think of all the little things that turn an ordinary event into an unforgettable experience.</p>
+</div>
+<button id="butt4">Explore Service<a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a></button>
+</div>
+<div id="new1">
+  <br><br>
+  <div id="textt2">
+ <p>GOURMET CATERING</p>
+  </div>
+  <div id="textt3">
+    Our professionally-trained culinary <br> team is passionate and proud of our diverse <br> and thoughtful menu, always cooking up something <br>that aligns with your great taste.
+  </div>
+   <button id="but1">Learn more <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a></button>
+   <div id="ne">
+    <br><br>
+  <div id="tex">
+ <p>Staffing</p>
+  </div>
+  <div id="tex1">
+    The hand-selected team at 24 Carrots are just as important <br> to our reputation as our gourmet food. Our staff is <br> certainly the best at what they do, and you’ll work with  <br>professionals who genuinely care about the success of your event!
+  </div>
+   <button id="buto">Learn more <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a></button>
+   </div>
+</div>
+<div id="new2">
+  <br><br>
+  <div id="texttt">
+ <p>Bar Service</p>
+  </div>
+  <div id="texttt1">
+    Our sophisticated flavor expertise enables us <br> to create inventive concoctions that generate <br> buzz in more ways than one!
+  </div>
+   <button id="bu">Learn more <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a></button>
+   <div id="nei">
+    <br><br>
+  <div id="tx">
+ <p>event production</p>
+  </div>
+  <div id="tx1">
+    If mind-blowing spectacles and immersive guest experiences  <br>are what you’re after, the specialists at 24 Carrots  <br>can pull it off on an epic scale!
+  </div>
+   <button id="buo">Learn more <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a></button>
+   </div>
+   <br><br>
+   <div id="main8">
+    <div id="abt1" class="abt"><p id="ab1"><span id="sp1">About 24carrots</span><br> About Us <br>
+        Annual Returns <br>
+        Careers <br>
+        Contact Us <br>
+        Corporate Social 
+        Responsibility <br>
+        <!-- GoDaddy Blog <br> -->
+        Investor Relations <br> 
+        Legal <br>
+        Newsroom <br>
+        Trust Center <br></p></div>
+    <div id="abt2" class="abt"><p id="ab2"><span id="sp2">Support</span><br>Product Support
+        <br>Community
+        <br>Report Abuse
+        <br>Resources</p></div>
+    <div id="abt3" class="abt"><p id="ab3"><span id="sp3">Resources</span><br>Webmail
+        <br>WHOIS
+        <br>ICANN Confirmation
+        <br>Designers & Developers
+        <br>Redeem Code
+        <br>Product Catalog
+        <br>Customer Testimonials
+        <br>Business Name Generator</p></div>
+    <div id="abt4" class="abt"><p id="ab4"><span id="sp4">Partner Programs</span><br>Affiliates
+        <br>Reseller Programs
+        <br>24carrots</p></div>
+    <div id="abt5" class="abt"><p id="ab5"><span id="sp5">Account</span><br>My Products
+        <br>Renewals & Billing
+        <br>Create Account </p></div>
+    <div id="abt6" class="abt"><p id="ab6"><span id="sp6">Shopping</span><br>Buy a Domain
+        <br>Websites
+        <br>WordPress
+        <br>Hosting
+        <br>Web Security
+        <br>Email & Office</p></div>  
+</div>
+<div id="main9" class="off">
+    <p id="of1"></p>
+    <p id="of2">India - English <a href=""><i class="fa-solid fa-chevron-up"></i></a></p>
+    <p id="of3">USD$ <a href=""><i class="fa-solid fa-chevron-up"></i></a></p>
+    <p id="of4"><a href=""><i class="fa-brands fa-facebook"></i></a></p>
+    <p id="of5"><a href=""></a><i class="fa-brands fa-instagram"></i></p>
+    <p id="of6"><a href=""></a><i class="fa-brands fa-youtube"></i></p>
+    </div>  
+    <div id="main10">
+        <p id="con1">Copyright © 1999 - 2024  Operating Company, LLC. All Rights Reserved. The  word mark is a registered trademark of Operating Company, LLC in the US and other countries. <span id="con3">Legal  PrivacyPolicy Cookies</span>
+           <br> The “24carrots” logo is a registered trademark of 24carrots.com, LLC in the US.</p>
+        <p id="con2">Use of this Site is subject to express terms of use. By using this site, you signify that you agree to be bound by these Universal Terms of Service.</p>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+  <script src="https://kit.fontawesome.com/9bd7d16fc9.js" crossorigin="anonymous"></script>
+</body>
+</html>
